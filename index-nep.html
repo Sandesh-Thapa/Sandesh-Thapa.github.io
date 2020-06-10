@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://kit.fontawesome.com/61a930e126.js"></script>
+    <link rel="stylesheet" href="style-nep.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://img.icons8.com/ultraviolet/40/000000/person-male.png"
+    />
+    <title>सन्देश थापा</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <nav>
+          <ul>
+            <div class="language">
+              <a href="index-nep.html" class="nepali">नेपा</a>
+              <span> | </span>
+              <a href="index.html" class="english">ENG</a>
+            </div>
+            <li><a class="border-bottom" href="#home">गृह</a></li>
+            <li><a class="border-bottom" href="#about">मेरो बारेमा</a></li>
+            <li><a class="border-bottom" href="#project">प्रोजेक्टहरू</a></li>
+            <li><a class="border-bottom" href="#contact">सम्पर्क</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <section id="home">
+        <div class="info">
+          <h1>सन्देश <span>थापा</span></h1>
+          <p>Full-Stack web developer | programer | designer</p>
+        </div>
+
+        <div class="skills">
+          <div class="card card-1">
+            <img src="img/web-dev1.png" />
+            <h4>Web Development</h4>
+          </div>
+          <div class="card card-2">
+            <img src="img/web-design.png" />
+            <h4>Web Design</h4>
+          </div>
+          <div class="card card-3">
+            <img src="img/responsive-design.png" />
+            <h4>Responsive Design</h4>
+          </div>
+          <div class="card card-4">
+            <img src="img/wordpress.png" />
+            <h4>Wordpress Design</h4>
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="container">
+          <div class="main">
+            <div class="main-left">
+              <h1>मेरो <span> बारेमा</span></h1>
+              <p>
+                वेब डिजाइनर र विकासकर्ता, नेपाल। व्यवसायलाई अझ राम्रो गर्न मद्दत
+                गर्न म अनुकूलन वेबसाइटहरू बनाउँछु।
+              </p>
+              <button class="btn-resume">बायो डाटा हेर्नुहोस्</button>
+            </div>
+
+            <div class="main-right">
+              <h1>मेरा<span> सीपहरु</span></h1>
+
+              <h4>Web technology</h4>
+              <div class="skills">
+                <div class="web">
+                  <div>
+                    <img src="img/html5.png" />
+                    <p>HTML5</p>
+                  </div>
+                  <div>
+                    <img src="img/css3.png" />
+                    <p>CSS3</p>
+                  </div>
+                  <div>
+                    <img src="img/javascript.png" />
+                    <p>Javascript</p>
+                  </div>
+                  <div>
+                    <img src="img/reactjs.png" />
+                    <p>React Js</p>
+                  </div>
+                  <div>
+                    <img src="img/php.png" />
+                    <p>PHP</p>
+                  </div>
+                </div>
+
+                <h4 class="graphic-title">Graphic Design</h4>
+                <div class="graphic">
+                  <div>
+                    <img src="img/photoshop.png" />
+                    <p>Adobe Photoshop</p>
+                  </div>
+                  <div>
+                    <img src="img/illustrator.png" />
+                    <p>Adobe Illustrator</p>
+                  </div>
+                  <div>
+                    <img src="img/indesign.png" />
+                    <p>Adobe Indesign</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="project">
+        <div class="container">
+          <!-- <div class="image">
+            <img src="img/construction.webp" />
+          </div> -->
+          <div class="github-profile">
+            <div class="profile-image">
+              <img
+                alt="Profile-Image"
+                title="Github-Profile-Image"
+                id="githubPic"
+              />
+              <br /><br />
+              <a id="githubLink" target="_blank">
+                <i class="fa fa-github" aria-hidden="true"></i> Github प्रोफाइल
+                हेर्नुहोस्
+              </a>
+            </div>
+            <div class="repos">
+              <h3>Githubका सार्वजनिक भंडारहरू</h3>
+              <div id="reposTable">
+                <table>
+                  <thead>
+                    <tr class="table-head">
+                      <th>परियोजना शीर्षक</th>
+                      <th>Github Url</th>
+                      <th>प्रयोग गरिएको भाषा</th>
+                      <th>प्रत्यक्ष हेर्नुहोस्</th>
+                    </tr>
+                  </thead>
+                  <tbody id="tableHead">
+                    <!-- Dynamically loaded from github users API -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="container">
+          <div class="heading">
+            <h1><span>सम्पर्क</span>मा रहनुहोस्</h1>
+            <p>सम्पर्क गर्न नहिचकिचाउनुहोस्। मलाई तपाईबाट सुन्न मन पर्छ।</p>
+          </div>
+          <div class="main">
+            <div class="contact-form">
+              <form action="" method="POST" id="contact-form">
+                <input
+                  class="form-control"
+                  type="text"
+                  name="name"
+                  placeholder="नाम"
+                />
+                <input
+                  class="form-control"
+                  type="email"
+                  name="email"
+                  placeholder="इमेल"
+                  autocomplete="none"
+                />
+                <textarea
+                  class="form-control"
+                  name="message"
+                  placeholder="सन्देश"
+                ></textarea>
+                <button class="btn-submit">पेश गर्नुहोस्</button>
+              </form>
+            </div>
+
+            <div class="map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3533.0657409469404!2d85.34549359323536!3d27.684362937970263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb198d6e6634c5%3A0xe41ca7b5c8842b97!2sCollege+of+Information+Technology+and+Engineering!5e0!3m2!1sen!2snp!4v1565406427149!5m2!1sen!2snp"
+                height="100%"
+                width="100%"
+                frameborder="0"
+                style="border: 0;"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+
+          <div class="info">
+            <div class="mail">
+              <i class="fas fa-paper-plane"></i>
+              <p>mail@sandesh.com</p>
+            </div>
+            <div class="call">
+              <i class="fas fa-mobile-alt"></i>
+              <p>+977 1234567890</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
