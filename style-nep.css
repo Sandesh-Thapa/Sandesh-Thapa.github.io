@@ -280,6 +280,7 @@ header nav ul a:hover {
 #about .container .main .main-right img {
   width: 60px;
   height: 60px;
+  filter: grayscale(50);
 }
 
 #about .container .main .main-right .skills .web {
@@ -376,6 +377,20 @@ header nav ul a:hover {
 #project .github-profile .repos {
   margin-top: 30px;
   text-align: center;
+}
+
+#project .github-profile .repos #reposTable {
+  max-height: 300px;
+  overflow-y: scroll;
+}
+#project .github-profile .repos #reposTable::-webkit-scrollbar {
+  width: 5px;
+  height: 20px;
+}
+
+#project .github-profile .repos #reposTable::-webkit-scrollbar-thumb {
+  background: linear-gradient(transparent, skyblue);
+  border-radius: 6px;
 }
 
 #project .github-profile .repos h3 {
@@ -526,6 +541,15 @@ header nav ul a:hover {
   align-items: center;
   margin-top: 50px;
   color: #c7c4c4;
+}
+
+#contact .info a {
+  text-decoration: none;
+  color: #c7c4c4;
+}
+
+#contact .info a:hover {
+  text-decoration: underline;
 }
 
 #contact .info .mail {
